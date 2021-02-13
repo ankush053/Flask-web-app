@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<body class="w3-light-grey">
+
+
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+        <span class="w3-bar-item w3-left">Login page</span>
+    </div>
+    <form class="container middle inline form">
+        <div class="w3-card-2 w3-display-middle	w3-left w3-padding w3-white" style="width:50%">
+            <h1 class="h3 mb-3 fw-normal"><b>Login Form</b></h1>
+            <hr class="w3-black">
+            <label for="inputusername" class="visually-hidden">Name</label>
+            <input type="email" id="inputusername" class="form-control" placeholder="UserName" required autofocus>
+            <label for="inputEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+            <label for="inputPassword" class="visually-hidden">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input type="checkbox" onclick="showpswd()">Show Password
+            <br>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                <span class="w3-right w3-padding w3-hide-small">don't have an account?<a href="/sign_up"><br>create an acount</a></span>
+                <span class="w3-right w3-padding w3-hide-small">Forgot <a href="/forgot_pass"">password?</a></span>
+            </div>
+
+            <br>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+    </form>
+    </div>
+
+    <script>
+        function showpswd() {
+            var x = document.getElementById("inputPassword");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
